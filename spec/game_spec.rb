@@ -16,9 +16,12 @@ describe Game do
     end
   end
 
-  #context "two cells" do
-    #it "dead cell will still be dead" do
-      #assert_grid [[0], [0]]
-    #end
-  #end
+  context "two cells" do
+    it "dead cell will still be dead" do
+      assert_grid(
+        [[0], [0]],
+        [[0], [0]]
+      )
+    end
+  end
 end
