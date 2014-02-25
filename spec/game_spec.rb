@@ -7,19 +7,28 @@ end
 
 describe Game do 
   context "only one cell" do 
-    it "dead cell will still be dead" do 
+    it "one cell will still be dead" do 
       assert_grid [[0]], [[0]]
-    end
-
-    it "live cell will be dead" do 
       assert_grid [[1]], [[0]]
     end
   end
 
   context "two cells" do
-    it "dead cell will still be dead" do
+    it "two cells will still be dead" do
       assert_grid(
         [[0], [0]],
+        [[0], [0]]
+      )
+      assert_grid(
+        [[1], [0]],
+        [[0], [0]]
+      )
+      assert_grid(
+        [[0], [1]],
+        [[0], [0]]
+      )
+      assert_grid(
+        [[1], [1]],
         [[0], [0]]
       )
     end
