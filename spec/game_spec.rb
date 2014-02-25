@@ -32,5 +32,14 @@ describe Game do
         [[0], [0]]
       )
     end
+
+    context "three cells" do
+      it "three dead cells will die" do
+      assert_grid(
+        [[0], [0], [0]],
+        [[0], [0], [0]]
+      )
+      end
+    end
   end
 end
